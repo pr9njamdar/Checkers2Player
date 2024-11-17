@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "Hash": "CfL1hw3K2keO2rB4ww8tEoMAGI7UiwPsimYtGiBjqSw=",
+  "Source": "Checkers",
+  "BasePath": "_content/Checkers",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Checkers\\wwwroot",
+      "Source": "Checkers",
+      "ContentRoot": "C:\\Users\\Rutuja\\OneDrive\\Desktop\\pranavproject\\zensar\\WEB\\Checkers\\Checkers\\wwwroot\\",
+      "BasePath": "_content/Checkers",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Rutuja\\OneDrive\\Desktop\\pranavproject\\zensar\\WEB\\Checkers\\Checkers\\wwwroot\\index.html",
+      "SourceId": "Checkers",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Rutuja\\OneDrive\\Desktop\\pranavproject\\zensar\\WEB\\Checkers\\Checkers\\wwwroot\\",
+      "BasePath": "_content/Checkers",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\Rutuja\\OneDrive\\Desktop\\pranavproject\\zensar\\WEB\\Checkers\\Checkers\\wwwroot\\scripts.js",
+      "SourceId": "Checkers",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Rutuja\\OneDrive\\Desktop\\pranavproject\\zensar\\WEB\\Checkers\\Checkers\\wwwroot\\",
+      "BasePath": "_content/Checkers",
+      "RelativePath": "scripts.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\scripts.js"
+    },
+    {
+      "Identity": "C:\\Users\\Rutuja\\OneDrive\\Desktop\\pranavproject\\zensar\\WEB\\Checkers\\Checkers\\wwwroot\\Sockets.js",
+      "SourceId": "Checkers",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Rutuja\\OneDrive\\Desktop\\pranavproject\\zensar\\WEB\\Checkers\\Checkers\\wwwroot\\",
+      "BasePath": "_content/Checkers",
+      "RelativePath": "Sockets.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Sockets.js"
+    },
+    {
+      "Identity": "C:\\Users\\Rutuja\\OneDrive\\Desktop\\pranavproject\\zensar\\WEB\\Checkers\\Checkers\\wwwroot\\style.css",
+      "SourceId": "Checkers",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Rutuja\\OneDrive\\Desktop\\pranavproject\\zensar\\WEB\\Checkers\\Checkers\\wwwroot\\",
+      "BasePath": "_content/Checkers",
+      "RelativePath": "style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\style.css"
+    }
+  ]
+}
