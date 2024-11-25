@@ -25,8 +25,9 @@ socket.addEventListener("message", (event) => {
     }
     
     else if (event.data=="Verified id"){
-        document.getElementById("status").innerText="Player verified... you can start your game. It's your turn ";
+        document.getElementById("status").innerText="Player verified... you can start your game. It's your turn . Your piece is RED ";
         turn = true;
+        myPiece='red-piece'
         var id  = document.getElementById("Code").value;
         console.log(id)
         localStorage.setItem("OppId",id);
@@ -34,6 +35,7 @@ socket.addEventListener("message", (event) => {
     else if (event.data.startsWith("ConnectedWithId")){
         var id  = event.data.split(" ")[1];
         document.getElementById("status").innerText="Connected with id : "+id;
+        myPiece='black-piece'
         localStorage.setItem("OppId",id);
     }
     else if (event.data.startsWith("Update : ")){
@@ -110,6 +112,7 @@ const boardState = [
 ];
 
 let turn = false;
+let myPiece=null;
 let selectedSquareIndex=null;
 // Create the board visually and place pieces based on boardState
 function createBoard() {
@@ -162,7 +165,7 @@ function addPieceListeners() {
             //    0123
             let row = parseInt(id[1]);
             let col = parseInt(id[3]);
-            if(turn)
+            if(turn && selectedPiece.classList.contains(myPiece))
             highlightMoves(row, col, boardState[row][col]);
         });
     });
@@ -193,7 +196,7 @@ function addSquareListeners() {
                 // Update the boardState array
                 boardState[selectedRow][selectedCol] = null;  // Clear the original position
                 boardState[row][col] = selectedPiece.classList.contains('red-piece') ? 'R' : 'B';  // Update the new position
-                console.log("Fine working")
+               
                 const Update ={
                     oppid:localStorage.getItem("OppId"),
                     CapturedPiece :null,
@@ -262,6 +265,7 @@ function addSquareListeners() {
                         newCol:col
                     }
                 }
+                document.getElementById("status").innerText="Friend's turn 🤞🏻"
                 socket.send("Update : "+JSON.stringify(Update));
 
                 //  Update the turn
